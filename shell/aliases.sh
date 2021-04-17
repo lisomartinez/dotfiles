@@ -33,6 +33,7 @@ alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
 alias reload="source ~/.zshrc"
+alias update="zimfw uninstall && zimfw install && zimfw update && zimfw upgrade && reload"
 
 # Programming
 alias ws="cd ~/workspaces && ls -lah"
