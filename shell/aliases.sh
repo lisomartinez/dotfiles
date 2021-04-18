@@ -3,14 +3,16 @@ alias sudo='sudo '
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias l="ls -l"
-alias ll="ls -la"
 alias ~="cd ~"
+alias docs="cd ~/Documents"
 alias dotfiles="cd '$DOTFILES_PATH'"
+alias l="exa --long --header --no-permissions --no-user"
+alias ll="exa --long --header --all --no-permissions --no-user"
+alias lll="exa --long --header --all"
+alias ls="exa"
+alias rr="rm -rf"
 alias v="nvim"
 alias vi="nvim"
-alias rr="rm -rf"
-alias docs="cd ~/Documents"
 
 # Git
 alias gaa="git add -A"
@@ -31,14 +33,13 @@ alias k='kill -9'
 alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
-alias up='dot package update_all'
 alias reload="source ~/.zshrc"
+alias up='dot package update_all'
 
 # Programming
-alias ws="cd ~/workspaces && ls -lah"
 alias ml="cd ~/workspaces/meli"
 alias ous="ml; cd fbm-wms-outbound-unit-search"
 alias ouo="ml; fbm-wms-outbound-orchestrator"
 alias ou="ml; fbm-wms-outbound-unit"
 alias ro="ml; fbm-wms-rejection-orchestrator"
-
+alias ws="cd ~/workspaces && ls -lah"
