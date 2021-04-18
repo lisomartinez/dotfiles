@@ -34,7 +34,11 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias reload="source ~/.zshrc"
+<<<<<<< HEAD
 alias up='dot package update_all'
+=======
+alias update="zimfw uninstall && zimfw install && zimfw update && zimfw upgrade && reload"
+>>>>>>> 485984ed228b92a2f48064e08a49f45cbdc2f3d1
 
 # Programming
 alias ml="cd ~/workspaces/meli"
