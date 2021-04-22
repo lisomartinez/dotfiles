@@ -6,9 +6,9 @@ alias ...="cd ../.."
 alias ~="cd ~"
 alias docs="cd ~/Documents"
 alias dotfiles="cd '$DOTFILES_PATH'"
-alias l="exa --long --header --no-permissions --no-user"
-alias ll="exa --long --header --all --no-permissions --no-user"
-alias lll="exa --long --header --all"
+alias l="exa --long --header --no-permissions --no-user  --time-style=long-iso"
+alias ll="exa --long --header --all --no-permissions --no-user  --time-style=long-iso"
+alias lll="exa --long --header --all  --time-style=long-iso"
 alias ls="exa"
 alias rr="rm -rf"
 alias v="nvim"
@@ -37,10 +37,13 @@ alias reload="source ~/.zshrc"
 alias up='dot package update_all'
 alias update="zimfw uninstall && zimfw install && zimfw update && zimfw upgrade && reload"
 
-# Programming
+# Programming Folders
 alias ml="cd ~/workspaces/meli"
 alias ous="ml; cd fbm-wms-outbound-unit-search"
 alias ouo="ml; fbm-wms-outbound-orchestrator"
 alias ou="ml; fbm-wms-outbound-unit"
 alias ro="ml; fbm-wms-rejection-orchestrator"
 alias ws="cd ~/workspaces && ls -lah"
+
+# Programming
+alias check="./gradlew check"
